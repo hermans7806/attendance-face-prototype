@@ -1,10 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="attendance_face_prototype"
+        android:label="Face Recognition Prototype"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
-            android:name=".MainActivity"
+            android:name="com.fastclean.attendance_face_prototype.MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:taskAffinity=""
