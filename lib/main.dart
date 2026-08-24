@@ -23,7 +23,7 @@ class AttendanceFacePrototypeApp extends StatelessWidget {
       title: 'Attendance Face Recognition Prototype',
       debugShowCheckedModeBanner: false,
       initialBinding: AppBinding(),
-      initialRoute: AppRoutes.login,
+      initialRoute: AppRoutes.faceComparison,
       getPages: AppPages.pages,
       theme: AppTheme.light,
     );

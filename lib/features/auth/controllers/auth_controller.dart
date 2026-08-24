@@ -45,7 +45,7 @@ class AuthController extends GetxController {
           'Hubungi administrator bila terjadi kesalahan.',
         );
       } else {
-        Get.offAllNamed(AppRoutes.dashboard);
+        Get.offAllNamed(AppRoutes.faceTest);
       }
     } catch (_) {
       Get.snackbar(

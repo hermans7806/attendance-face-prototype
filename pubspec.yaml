@@ -39,6 +39,11 @@ dependencies:
   cloud_firestore: ^6.8.0
   google_sign_in: ^7.2.0
   get: ^4.7.3
+  google_mlkit_face_detection: ^0.13.0
+  image: ^4.5.4
+  face_auth_engine:
+    path: packages/face_auth_engine
+  image_picker: ^1.2.3
 
 dev_dependencies:
   flutter_test:
@@ -69,6 +74,7 @@ flutter:
   assets:
     - assets/absensi_logo.png
     - assets/google_logo.png
+    - packages/face_auth_engine/assets/models/mobilefacenet.tflite
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
