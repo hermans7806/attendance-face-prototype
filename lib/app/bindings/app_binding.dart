@@ -1,5 +1,7 @@
+import 'package:attendance_face_prototype/features/face_test/controllers/liveness_test_controller.dart';
 import 'package:get/get.dart';
 
+import '../../features/face_test/controllers/active_liveness_test_controller.dart';
 import '../../features/face_test/controllers/face_comparison_controller.dart';
 import '../../features/face_test/controllers/face_test_controller.dart';
 
@@ -16,5 +18,9 @@ class AppBinding extends Bindings {
 
     Get.lazyPut<FaceTestController>(() => FaceTestController());
     Get.lazyPut<FaceComparisonController>(() => FaceComparisonController());
+    Get.lazyPut<LivenessTestController>(() => LivenessTestController());
+    Get.lazyPut<ActiveLivenessTestController>(
+      () => ActiveLivenessTestController(),
+    );
   }
 }

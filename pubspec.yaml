@@ -44,6 +44,10 @@ dependencies:
   face_auth_engine:
     path: packages/face_auth_engine
   image_picker: ^1.2.3
+  tflite_flutter: ^0.12.1
+  path_provider: ^2.1.5
+  camera: ^0.12.0+2
+  
 
 dev_dependencies:
   flutter_test:
@@ -74,7 +78,10 @@ flutter:
   assets:
     - assets/absensi_logo.png
     - assets/google_logo.png
+    - assets/test_images/
     - packages/face_auth_engine/assets/models/mobilefacenet.tflite
+    - packages/face_auth_engine/assets/models/model.tflite
+    - packages/minifasnet/assets/silentface.tflite
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

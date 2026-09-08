@@ -1,8 +1,10 @@
+import 'package:attendance_face_prototype/features/face_test/screens/liveness_test_screen.dart';
 import 'package:get/get.dart';
 
 import '../../features/auth/views/login_view.dart';
 import '../../features/auth/views/pending_approval_view.dart';
 import '../../features/dashboard/views/dashboard_view.dart';
+import '../../features/face_test/screens/active_liveness_test_screen.dart';
 import '../../features/face_test/screens/face_comparison_screen.dart';
 import '../../features/face_test/screens/face_test_screen.dart';
 
@@ -12,6 +14,8 @@ abstract final class AppRoutes {
   static const dashboard = '/dashboard';
   static const faceTest = '/face-test';
   static const faceComparison = '/face-comparison';
+  static const livenessTest = '/liveness-test';
+  static const activeLiveness = '/active-liveness';
 }
 
 abstract final class AppPages {
@@ -21,5 +25,7 @@ abstract final class AppPages {
     GetPage(name: AppRoutes.dashboard, page: DashboardView.new),
     GetPage(name: AppRoutes.faceTest, page: FaceTestScreen.new),
     GetPage(name: AppRoutes.faceComparison, page: FaceComparisonScreen.new),
+    GetPage(name: AppRoutes.livenessTest, page: LivenessTestScreen.new),
+    GetPage(name: AppRoutes.activeLiveness, page: ActiveLivenessTestScreen.new),
   ];
 }
